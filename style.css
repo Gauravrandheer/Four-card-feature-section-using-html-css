@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--GrayishBlue: hsl(229, 6%, 66%);
+--VeryLightGray: hsl(0, 0%, 98%);
+}
+
+
+
+
+.attribution {
+    font-size: 11px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  body{
+     padding: 10px;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--VeryLightGray);
+  }
+
+  .myproject{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+     min-width: 400px;
+  }
+
+  img{
+      max-width: 50px;
+  }
+  article{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+  }
+  .first{
+      font-weight: 200;
+  }
+ article h1{
+     font-size: 1.5rem;
+ }
+  p{
+      padding: 15px;
+      text-align: center;
+      color:var(--GrayishBlue);
+      font-size: 15px;
+ 
+  }
+
+  .container{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  .card{
+      margin: 1rem 0;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      max-width: 300px;
+      min-width: 300px;
+      min-height: 200px;
+      max-height: 300px;
+     
+  }
+  .card img{
+      margin-bottom: 15px;
+      margin-right: 15px;
+      align-self: flex-end;
+      
+  }
+   .card h1{
+    padding: 15px 15px 0;
+   }
+
+  .card p{
+      text-align: justify;
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 1rem;
+  }
+
+  .team{
+
+    border-top: 5px solid var(--Red);
+  }
+
+  .calc{
+    border-top: 5px solid var(--Blue);
+  }
+
+  .sup{
+    border-top: 5px solid var(--Cyan);
+  }
+
+  .karma{
+    border-top: 5px solid var(--Orange)
+  }
+
+  @media (min-width:720px) {
+       body{
+           overflow: hidden;
+       }
+      .container{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    article p{
+        width: 400px;
+    }
+    .card{
+        margin: 10px;
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .box .team{
+        margin-bottom: 20px;
+    }
+
+    .attribution{
+        width: 100%;
+        text-align: center;
+    }
+  }
+
